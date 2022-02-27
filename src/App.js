@@ -10,7 +10,6 @@ function App() {
         <title>Raccoon Rex’s Library of Internet Safety</title>
         <h1>Raccoon Rex’s Library of Internet Safety</h1>
         <img src={logo} className="App-logo" alt="logo" />
-        <div>
             <nav>
               <ul id="navigation">
                 <li>
@@ -24,20 +23,19 @@ function App() {
                 </li>
               </ul>
             </nav>
-          </div>
-            <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/educator">
-              <Educators />
-            </Route>
-            <Route path="/parent">
-              <Parents />
-            </Route>
-          </Switch>
       </header>
     </div>
+    <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/educator">
+          <Educators />
+        </Route>
+        <Route path="/parent">
+          <Parents />
+        </Route>
+      </Switch>
   );
 }
 
