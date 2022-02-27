@@ -8,15 +8,22 @@ export default props => {
       <a className="menu-item" href="/">
         Home
       </a>
+
       <a className="menu-item" href="/student">
         Students
       </a>
-      <a className="menu-item" href="/parent">
-        Parents
-      </a>
+      <Link to="/parent">Parents</Link>
       <a className="menu-item" href="/educator">
         Educators
       </a>
+      <Switch>
+          <Route path="/educator">
+          <Educators />
+          </Route>
+          <Route path="/parent">
+          <Parents />
+          </Route>
+      </Switch>
     </Menu>
   );
 };
