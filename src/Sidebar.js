@@ -12,7 +12,7 @@ export default props => {
       <a className="menu-item" href="/student">
         Students
       </a>
-      <a className="menu-item" href="/parents">
+      <a className="menu-item" href="/parent">
               Parents
         </a>
       <a className="menu-item" href="/educator">
